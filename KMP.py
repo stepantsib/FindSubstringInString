@@ -1,4 +1,7 @@
-def compute_prefix_function(pattern: str) -> list[int]:
+def compute_prefix_function(pattern: str) -> list:
+    """
+    Вычисляет префикс-функцию для алгоритма КМП.
+    """
     pattern_length: int = len(pattern)
     prefix_table: list = [0] * pattern_length
     matched_length: int = 0
@@ -16,6 +19,9 @@ def compute_prefix_function(pattern: str) -> list[int]:
 
 
 def kmp_search(pattern: str, text: str) -> int:
+    """
+    Ищет первое вхождение подстроки в тексте с помощью алгоритма КМП.
+    """
     pattern_length: int = len(pattern)
     text_length: int = len(text)
 
