@@ -1,6 +1,7 @@
 import os
 import random
 import string
+from pathlib import Path
 
 SIZES = [
     1_024,
@@ -18,7 +19,11 @@ SIZES = [
     20_971_520,
 ]
 PATTERN_LEN = 1000
-DATA_DIR = "../benchmark_data"
+
+ROOT = Path(__file__).parent.parent
+
+DATA_DIR = str(ROOT / "benchmark_data")
+RESULTS_FILE = str(ROOT / "benchmark_results.csv")
 
 
 def save_case(size: int, case_type: str, text: str, pattern: str):

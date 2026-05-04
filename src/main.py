@@ -4,10 +4,11 @@ import math
 import csv
 from BF import brute_force_search
 from KMP import kmp_search
+from pathlib import Path
 
-
-DATA_DIR = "../benchmark_data"
-RESULTS_FILE = "../benchmark_results.csv"
+ROOT = Path(__file__).parent.parent
+DATA_DIR = str(ROOT / "benchmark_data")
+RESULTS_FILE = str(ROOT / "benchmark_results.csv")
 
 
 N_RUNS = 11

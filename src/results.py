@@ -2,8 +2,10 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from pathlib import Path
 
-RESULTS_FILE = "../benchmark_results.csv"
+ROOT = Path(__file__).parent.parent
+RESULTS_FILE = str(ROOT / "benchmark_results.csv")
 
 
 def main():
@@ -81,7 +83,7 @@ def main():
         plt.grid(True, linestyle=":", alpha=0.7)
         plt.legend(loc="upper left")
 
-        plt.xscale('log')
+        plt.xscale("log")
 
         filename = f"graph_{case}_case.png"
         plt.savefig(filename, dpi=300, bbox_inches="tight")
