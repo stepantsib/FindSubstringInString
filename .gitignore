@@ -1,2 +1,16 @@
+# IDE
 .idea
+
+# Виртуальное окружение
 .venv
+
+# Кеш Python
+__pycache__/
+*.pyc
+
+# Сгенерированные данные (могут весить сотни МБ)
+benchmark_data/
+
+# Результаты и графики (воспроизводимы запуском run.py)
+benchmark_results.csv
+graph_*.png
