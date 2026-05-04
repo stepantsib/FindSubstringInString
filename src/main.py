@@ -6,8 +6,8 @@ from BF import brute_force_search
 from KMP import kmp_search
 
 
-DATA_DIR = "benchmark_data"
-RESULTS_FILE = "benchmark_results.csv"
+DATA_DIR = "../benchmark_data"
+RESULTS_FILE = "../benchmark_results.csv"
 
 
 N_RUNS = 11

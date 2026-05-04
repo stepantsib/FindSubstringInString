@@ -10,15 +10,9 @@ SIZES = [
     102_400,
     307_200,
     1_048_576,
-    2_097_152,
-    4_194_304,
-    8_388_608,
-    10_485_760,
-    16_777_216,
-    20_971_520,
 ]
 PATTERN_LEN = 1000
-DATA_DIR = "benchmark_data"
+DATA_DIR = "../benchmark_data"
 
 
 def save_case(size: int, case_type: str, text: str, pattern: str):

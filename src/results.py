@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-RESULTS_FILE = "benchmark_results.csv"
+RESULTS_FILE = "../benchmark_results.csv"
 
 
 def main():
