@@ -10,7 +10,3 @@ __pycache__/
 
 # Сгенерированные данные (могут весить сотни МБ)
 benchmark_data/
-
-# Результаты и графики (воспроизводимы запуском run.py)
-benchmark_results.csv
-graph_*.png
