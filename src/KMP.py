@@ -3,7 +3,7 @@ def compute_prefix_function(pattern: str) -> list:
     Вычисляет префикс-функцию для алгоритма КМП.
     """
     pattern_length: int = len(pattern)
-    prefix_table: list = [0] * pattern_length
+    prefix_table: list[int] = [0] * pattern_length
     matched_length: int = 0
 
     for current_position in range(1, pattern_length):
